@@ -56,7 +56,7 @@ spec:
     spec:
       containers:
       - name: realtimeapp
-        image: gbaeke/fluxapp:1.0.2
+        image: gbaeke/fluxapp:1.0.0
         env:
         - name: REDISHOST
           value: "redisapp:6379"
@@ -73,13 +73,13 @@ spec:
     canary:
       stableService: realtimeapp-stable
       canaryService: realtimeapp-canary
-      trafficRouting:
-        nginx:
-          stableIngress: realtimeapp-ingress
+#       trafficRouting:
+#         nginx:
+#           stableIngress: realtimeapp-ingress
       steps:
       - setWeight: 20
-#       - pause:
-#           duration: 1m
+      - pause:
+          duration: 1m
       - setWeight: 60
       - pause: {}
 ---
