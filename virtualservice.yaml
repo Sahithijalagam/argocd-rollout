@@ -4,7 +4,7 @@ metadata:
   name: istio-rollout-vsvc
 spec:
   gateways:
-  - istio-rollout-gateway
+  - istio-rollout-gw
   hosts:
   - istio-rollout.apps.argoproj.io
   - istio-rollout.local
