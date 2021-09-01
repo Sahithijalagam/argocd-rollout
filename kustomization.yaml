@@ -10,4 +10,4 @@ resources:
 - virtualservice.yaml
 images:
 - name: alexmt/rollouts-demo
-  newTag: green
+  newTag: red
