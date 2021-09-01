@@ -6,6 +6,8 @@ resources:
 - service.yaml
 - ingress.yaml
 - preview-service.yaml
+- gateway.yaml
+- virtualservice.yaml
 images:
 - name: alexmt/rollouts-demo
   newTag: green
