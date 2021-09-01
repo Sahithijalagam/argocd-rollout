@@ -8,6 +8,7 @@ resources:
 - preview-service.yaml
 - gateway.yaml
 - virtualservice.yaml
+- namespace.yaml
 images:
 - name: alexmt/rollouts-demo
-  newTag: red
+  newTag: blue
